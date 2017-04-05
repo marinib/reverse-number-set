@@ -1,0 +1,28 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+	// This is where the scanner object is created
+    Scanner input = new Scanner(System.in);
+
+    // This is where you are prompted for a set of numbers
+    System.out.println("Enter a set of numbers to be reversed: ");
+    int number = input.nextInt();
+
+    // This is where the magic happens (using Module)
+        int reverse = 0;
+        while(number != 0){
+                reverse = (reverse*10)+(number%10);
+                number = number/10;
+        }
+        // This is where it returns your set of reverse numbers
+        System.out.println("Your numbers reversed are: " + reverse);
+        }
+}
+/*
+Marin Bizbiqi
+ */
