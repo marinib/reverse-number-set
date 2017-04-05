@@ -13,7 +13,7 @@ public class Main {
     System.out.println("Enter a set of numbers to be reversed: ");
     int number = input.nextInt();
 
-    // This is where the magic happens (using Module)
+    // This is where the magic happens (using remainder or modulus)
         int reverse = 0;
         while(number != 0){
                 reverse = (reverse*10)+(number%10);
